@@ -4,11 +4,11 @@ function vowelIndices(word){
     let indexArr = [];
     let i = 1;
     for (let chart of word.toLowerCase()){
-        if( chart == 'a' || 'e' || 'i' || 'o' || 'u' || 'y'){
-            indexArr.push(i++);
-        };
-        i++;
+        if(chart == "a"||chart == "e" || chart == "i" || chart == "o" || chart == "u" || chart == "y"){
+            indexArr.push(i);
+            i++;
+        } else i++;
     };
     return indexArr;  
-
-}
+};
+console.log(vowelIndices("apple"));
